@@ -10,13 +10,13 @@
 @media (max-width: 768px) {
   #post {
     .post {
-      post-top {
+      .post-top {
         justify-content: center;
         a {
           display: none;
         }
       }
-      .post-main {
+      post-main {
         flex-direction: column;
       }
     }
@@ -40,6 +40,22 @@
       gap: 25px;
       .hero-text {
         align-items: center;
+      }
+    }
+  }
+  #work {
+    .work {
+      .work-main {
+        .work-card {
+          flex-direction: column;
+          img {
+            width: 100%;
+          }
+          .work-card:nth-child(2),
+          .work-card:nth-child(3) {
+            display: none;
+          }
+        }
       }
     }
   }
